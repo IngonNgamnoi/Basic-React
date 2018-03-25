@@ -5,9 +5,9 @@ class Header extends Component{
       return(
         <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
+    
       <img src="https://article.redprice.co/wp-content/uploads/2018/02/Untitled-3.png"/>
-    </a>
+    
 
    <nav class="breadcrumb" aria-label="breadcrumbs">
   <ul>
@@ -17,6 +17,7 @@ class Header extends Component{
     
   </ul>
 </nav>
+        
   </div>
 </nav>
 
