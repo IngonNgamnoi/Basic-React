@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './CounterBrand.css';
+import Service from './Service';
 class Counterbrand extends Component {
   render() {
     return (
@@ -42,6 +43,8 @@ class Counterbrand extends Component {
                                     <a thisid="12315" href="https://illamasqua.konvy.com/" target="_blank"><img class="lazy_img" data-h="185" data-w="185" original="https://www.konvy.com/static/all/evblock/2018/0223/15193789078397.png" src="https://www.konvy.com/static/all/evblock/2018/0223/15193789078397.png" /></a>
                                                 </li>
                                 </ul>
+                                <Service />
+                                
 </div>
       </div>
 
