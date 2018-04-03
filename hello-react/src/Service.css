@@ -1,0 +1,11 @@
+.promo_product_img img{
+    width: 120px;
+    height: 120px;
+}
+.new_product>ul>li {
+    float: left;
+    margin: 0 12px 15px 0;
+    background: white;
+    position: relative;
+    border: 1px white solid;
+}

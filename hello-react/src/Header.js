@@ -11,8 +11,8 @@ class Header extends Component{
 
    <nav class="breadcrumb" aria-label="breadcrumbs">
   <ul>
-    <li><a href="home">Home</a></li>
-    <li><a href="counterbrand">Conuter Brand</a></li>
+    <li><a href="/home">Home</a></li>
+    <li><a href="/counterbrand">Conuter Brand</a></li>
     <li><a href="#">Kroean Brand</a></li>
     
   </ul>

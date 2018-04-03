@@ -5,6 +5,8 @@ import Header from './Header';
 import Content from './Content';
 import CounterBrand from './CounterBrand';
 import Footer1 from './Footer1';
+import List from './List';
+import detail from './detail';
 //import './App.css';
 //สร้างcomponent ชื่อว่า app jsx
 class App extends Component {
@@ -17,8 +19,11 @@ class App extends Component {
              <Switch>
              <Route exact path='/home' component={Content} />
               <Route exact path='/counterBrand' component={CounterBrand} />
+              <Route exact path='/detail/:id' component={detail} />
              </Switch>
              <Footer1 />
+           
+
           </div>
        </Router>
 

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Service from './Service';
-import './Preimage.css';
+import './Preimage.css'
+import productPreload from './preload.png';
+
 class Preimage extends Component {
 
   constructor(props) {
-    super(props);
+    super();
     this.productImage = null;
   }
 
@@ -12,12 +14,12 @@ class Preimage extends Component {
         
     const productImg = new Image();
 
-    productImg.src = this.props.imageLoaded;
+    productImg.src = this.props.image;
 
     productImg.onload = () => {
       this.productImage.setAttribute(
         'style',
-        `background-image: url('${this.props.imageLoaded}')`
+        `background-image: url('${this.props.image}')`
       );
       this.productImage.classList.add('iron-image-fade-in');
     }
@@ -34,7 +36,7 @@ class Preimage extends Component {
         </div>
         <div 
           className="iron-image-preload" 
-          style={{ backgroundImage: `url('${this.props.srcPreload}')` }}>
+          style={{ backgroundImage: `url('${productPreload}')` }}>
         </div>
       
       </div>
