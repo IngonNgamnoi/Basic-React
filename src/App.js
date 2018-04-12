@@ -17,6 +17,7 @@ class App extends Component {
              <Header />
              
              <Switch>
+             <Route exact path='/' component={Content} />
              <Route exact path='/home' component={Content} />
               <Route exact path='/counterBrand' component={CounterBrand} />
               <Route exact path='/detail/:id' component={detail} />
