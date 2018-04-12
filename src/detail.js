@@ -10,15 +10,14 @@ class detail extends Component {
         };
     }
     componentDidMount() {
-        let api = new Http();
-        api.getbyId(this.props.match.params.id).then((result) => {
-            this.setState({
-                product: result.data
-            });
-        })
+        // api.getbyId(this.props.match.params.id).then((result) => {
+        this.setState({
+            product: Http.getbyId(this.props.match.params.id)
+        });
+        console.log(Http.getbyId(this.props.match.params.id))
+        // })
     }
     render() {
-        console.log(this.props);
         return (
 
             <div class="columns is-multiline is-mobile">

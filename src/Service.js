@@ -1,11 +1,14 @@
-import axios from 'axios'
-class Http {
+import Product from './Product'
+const Http = {
     getAll() {
-        return axios.get('http://localhost:8000');
-    }
-
+        return Product;
+    },
     getbyId(id){
-        return axios.get(`http://localhost:8000/${id}`);
+        return Product.find((doc)=>{
+            console.log(doc,id,doc.id == id)
+            return doc.id == id
+        });
+        //axios.get(`http://localhost:8000/${id}`);
     }
 }
 export default Http;

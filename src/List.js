@@ -11,12 +11,9 @@ class List extends Component {
         };
     }
     componentDidMount() {
-        let api = new Http();
-        api.getAll().then((result)=>{
-            this.setState({
-                products: result.data
-            });
-        })
+        this.setState({
+            products: Http.getAll()
+        });
     }
     render() {
         return (
