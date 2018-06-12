@@ -9,7 +9,7 @@ class Header extends Component{
       <img src="https://article.redprice.co/wp-content/uploads/2018/02/Untitled-3.png"/>
     
 
-   <nav class="breadcrumb" aria-label="breadcrumbs">
+   <nav class="breadcrumb" >
   <ul>
     <li><a href="/home">Home</a></li>
     <li><a href="/counterbrand">Conuter Brand</a></li>

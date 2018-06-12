@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Http from './Service';
+import Http from './ServiceReact';
 
 import Listitem from './Listitem';
 
@@ -11,9 +11,13 @@ class List extends Component {
         };
     }
     componentDidMount() {
-        this.setState({
-            products: Http.getAll()
-        });
+        let api = new Http();
+        api.getAll().then((res)=>{
+            this.setState({
+                products:res.data
+            })
+        })
+      
     }
     render() {
         return (

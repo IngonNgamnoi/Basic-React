@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Service from './Service';
+import Service from './ServiceReact';
 import './Preimage.css'
 import productPreload from './preload.png';
 
